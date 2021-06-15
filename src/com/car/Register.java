@@ -136,7 +136,7 @@ public class Register extends HttpServlet {
 		{
 			out.println("<button color='yellow' autofocus padding='50px 32px'><a href='carpark.html'>Back</a></button>");
 			out.println("<button color='red' autofocus padding='50px 32px'><a href='index.html'>Home</a></button>");
-			out.println("<html><body background='images/slide2.jpg'  ><center><br><br><br><br><br><br><br><br><br><br><font color='yellow' size='15'>Sorry car parking is full..</font></center></body></html>");
+			out.println("<html><body background='images/gallery/25.jpg'  ><center><br><br><br><br><br><br><br><br><br><br><font color='white' size='15' face='helvetica bold' >Sorry car parking is full..</font></center></body></html>");
 		}
 		
 		con.close();
@@ -146,7 +146,7 @@ public class Register extends HttpServlet {
 			out.println("<button color='red' autofocus padding='50px 32px'><a href='index.html'>Home</a></button>");
 			
 			out.println("<button color='blue' autofocus padding='50px 32px'><a href='carpark.html'>Back</a></button>");
-		out.println("<html><body background='images/slide2.jpg'><center><br><br><br><br><br><br><br><br><br><br><br><br><font color='yellow' size='15'>Sorry this car is already parked..</font><center></body></html>");
+		out.println("<html><body background='images/gallery/26.jpg'><center><br><br><br><br><br><br><br><br><font color='white' size='15'>Sorry this car is already parked..</font><center></body></html>");
 	}
 		catch(Exception e)
 		{

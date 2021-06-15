@@ -58,7 +58,7 @@ public class Contact extends HttpServlet {
 		
 				
 				out.println("<button color='red' autofocus padding='50px 32px'><a href='index.html'>Home</a></button>");
-				out.println("<html><body background='images/slide2.jpg'  ><center><br><br><br><br><br><br><br><br><br><br><font color='yellow' size='15'>Feedback send....<br> Thanks for contacting us....<br>we will back to You soon. </font></center></body></html>");
+				out.println("<html><body background='images/gallery/27.jpg'  ><center><br><br><br><br><br><br><br><br><br><br><font color='white' size='15'>Feedback send....<br> Thanks for contacting us....<br>we will back to You soon. </font></center></body></html>");
 				}
 			else
 			{

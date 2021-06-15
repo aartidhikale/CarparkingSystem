@@ -45,11 +45,11 @@ public class Table extends HttpServlet {
 		String s="Select * from cust";
 		Statement stmt1=con.createStatement();
 		ResultSet rs =stmt1.executeQuery(s);
-		out.println("<body background='images/slide2.jpg'>");
-		out.println("<button color='white' autofocus padding='50px 32px'><a href='Admindash.jsp'>Back</a></button>");
-		out.println("<center><font size='20' color='yellow'>Records in database </font></center>");
-		out.println("<br><hr><br><br>");
-		out.println("<center><table border='1' bgcolor='##ffcc99' width='50%'><tr><th>Fname</th><th>Lname</th><th>Carnumber</th><th>Mob_no</th><th>email</th><th>city</th><th>pincode</th><th>Payment</th></tr>");
+		out.println("<body background='images/gallery/14.jpg'>");
+		out.println("<button color='white' autofocus padding='10px 12px'><a href='Admindash.jsp'>Back</a></button>");
+		out.println("<center><font size='20' color='white'>Records in Database </font></center>");
+		out.println("<br><br>");
+		out.println("<center><table border='1' bgcolor='#AED6F1' width='50%'><tr><th>Fname</th><th>Lname</th><th>Carnumber</th><th>Mob_no</th><th>email</th><th>city</th><th>pincode</th><th>Payment</th></tr>");
 		while(rs.next())
 		{
 		    String fname=rs.getString(1);
@@ -67,11 +67,33 @@ public class Table extends HttpServlet {
 	      
 		}
 		out.println("</table></center>");
+		String s1="Select * from contact";
+		Statement stmt2=con.createStatement();
+		ResultSet rs1 =stmt2.executeQuery(s1);
+		out.println("<br>");
+		out.println("<center><font size='20' color='white'> Feedback Collected </font></center>");
+		out.println("<br><br>");
+		out.println("<center><table border='1' bgcolor='grey' width='50%'><tr><th>Name</th><th>Email</th><th>Subject</th><th>Message</th></tr>");
+		while(rs1.next())
+		{
+		    String name=rs1.getString(1);
+		    String email=rs1.getString(2);
+		    String subject=rs1.getString(3);
+		    String msg=rs1.getString(4);
+		    
+		 
+		    
+	      out.print("<tr><td>"+name+"</td><td>"+email+"</td><td>"+subject+"</td><td>"+msg+"</td></tr>");
+	      
+	      
+		}
+		out.println("</table></center>");
+		
 	
 		}
 		catch(Exception e)
 		{
-			out.println("Error");
+			out.println(e);
 		}
 	}
 

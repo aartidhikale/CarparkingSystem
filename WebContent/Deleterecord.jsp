@@ -350,7 +350,7 @@ body {
 
                    <div class="signin-form">
     <form action="Deleterecord" method="get">
-		<h2>Login</h2>
+		<h2>Delete</h2>
 		
        
         <div class="form-group">

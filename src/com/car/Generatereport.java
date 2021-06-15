@@ -50,21 +50,21 @@ public class Generatereport extends HttpServlet {
 	
 	
 			
-		String line="Firstname  LastName  Carnumber  Mobno                     email                                     city                    pincode";
+		String line="Firstname    LastName   Carnumber    Mobno                         email                                        city                  pincode";
 		 fw.write(line);
 		 fw.write("\n");
 		while(rs.next())
 		{
-		    String fname=rs.getString(1);
-		    String lname=rs.getString(2);
-		    String Carnumber=rs.getString(3);
-		    String mob_no=rs.getString(4);
-		    String email=rs.getString(5);
-		    String city=rs.getString(6);
-		    String pincode=rs.getString(7);
+		    String fname=rs.getString(2);
+		    String lname=rs.getString(3);
+		    String Carnumber=rs.getString(4);
+		    String mob_no=rs.getString(5);
+		    String email=rs.getString(6);
+		    String city=rs.getString(7);
+		    String pincode=rs.getString(8);
 		    flag=1;
 
-		 line=fname+"         "+lname+"       "+Carnumber+"             "+mob_no+"      "+email+"                     "+city+"              "+pincode;
+		 line=fname+"             "+lname+"          "+Carnumber+"                "+mob_no+"        "+email+"                      "+city+"           "+pincode  ;
 		 fw.write(line);
 		 fw.write("\n");
 		    

@@ -11,6 +11,15 @@
    		<servlet-name>login</servlet-name>
   		<url-pattern>/Login</url-pattern>
   </servlet-mapping>
+   <servlet>
+  		<servlet-name>Clientlogin</servlet-name>
+  		<servlet-class>com.car.Clientlogin</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   		<servlet-name>Clientlogin</servlet-name>
+  		<url-pattern>/Clientlogin</url-pattern>
+  </servlet-mapping>
   
    <servlet>
   		<servlet-name>generatereport</servlet-name>

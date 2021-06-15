@@ -12,7 +12,7 @@
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-  background-image: url('images/gallery/8.jpg');
+  background-image: url('images/gallery/19.jpg');
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -29,30 +29,32 @@ body, html {height: 100%}
                                 </a>
   </div>
    <center> <div class="w3-display-middle">
-     <h1 class="w3-jumbo w3-animate-top" style="color:white;">Car parked Successfully</h1>
-      <p class="w3-large w3-center" style="color:white;">Thanks for using Morya parking system....</p>
- <font color="red" size="5px">
+     <h1 class="w3-jumbo w3-animate-top" style="color:black; font-family:helvetica bold;">Car parked Successfully</h1>
+      <p class="w3-large w3-center" style="color:red;">Thanks for using Morya parking system....</p>
+ <font color="grey"  size="5px">
    <hr class="w3-border-grey" style="margin:auto;width:40%"><br>
-   <font color="white" size="5px">Name : </font>
+   <font size=5 style="color:white; font-family:helvetica bold;">Name : 
  <%
  out.print(session.getAttribute("fn"));
  out.print(" ");
  out.print(session.getAttribute("ln"));
  %><br>
-  <font color="white" size="5px">mobile number : </font>
+ Mobile Number: 
  <%
  out.print(session.getAttribute("mob"));
 
- %><br> <font color="white" size="5px">Email : </font>
+ %><br>
+ Email :
  <%
  out.print(session.getAttribute("emai"));
- %><br><font color="white" size="5px">City and pincode : </font>
+ %><br>
+ City and Pincode :
  <%
  out.print(session.getAttribute("ci"));
  out.print(" ");
  out.print(session.getAttribute("pin"));
  %><br>
-Your Car Slot  number is :
+Parking Slot :
   <%
   out.print(session.getAttribute("number"));%><br>
   

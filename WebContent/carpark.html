@@ -12,8 +12,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
 body {
-	color: #fff;
-	background-image:  url("images/4.jpg");
+	
+	background-image:  url("images/gallery/15.jpg");
 	font-family: 'Roboto', sans-serif;
 	background-repeat: no-repeat;
 	background-size:cover;
@@ -46,7 +46,7 @@ body {
 	content: "";
 	height: 2px;
 	width: 30%;
-	background: #d4d4d4;
+	background: black;
 	position: absolute;
 	top: 50%;
 	z-index: 2;
@@ -58,7 +58,7 @@ body {
 	right: 0;
 }
 .signup-form .hint-text {
-	color: #999;
+	color: blue;
 	margin-bottom: 30px;
 	text-align: center;
 }
@@ -80,6 +80,7 @@ body {
 	font-size: 16px;
 	font-weight: bold;		
 	min-width: 140px;
+	background-color:black;
 	outline: none !important;
 }
 .signup-form .row div:first-child {
@@ -122,6 +123,9 @@ body {
         <div class="form-group">
             <input type="number" class="form-control" name="plate" placeholder="Car number like mh-1234" required="required">
         </div>  
+         <div class="form-group">
+            <input type="number" class="form-control" name="hours" placeholder="Amount of hours" required="required">
+        </div>
         <div class="form-group">
             <input type="text" class="form-control" name="mob_no" placeholder="Mobile" required="required" minlength=10 maxlength=10>
         </div>
